@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "watch-webapi",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/FarmManager.WebAPI/FarmManager.WebAPI.csproj",
+                "--launch-profile",
+                "Development"
+            ],
+            "problemMatcher": "$msCompile",
+            "isBackground": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/FarmManager.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "type": "dotnet",
+            "task": "watch FarmManager.WebAPI",
+            "file": "C:\\Projects\\FarmManager\\FarmManager.WebAPI\\FarmManager.WebAPI.csproj",
+            "problemMatcher": [],
+            "label": "dotnet: watch FarmManager.WebAPI"
+        }
+    ]
+}

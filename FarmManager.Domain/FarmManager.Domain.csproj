@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>FarmManager.Domain</RootNamespace>
+    <AssemblyName>FarmManager.Domain</AssemblyName>
+  </PropertyGroup>
+
+</Project>
